@@ -1,0 +1,11 @@
+version: "3"
+services:
+  next:
+    build: ./
+    command: sh -c "npm run dev"
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/app
+    stdin_open: true
+    tty: true
