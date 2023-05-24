@@ -1,6 +1,6 @@
 "use client";
 
-// import styles from "./page.module.css";
+import "./css/page.css";
 import React, { useState, useEffect } from "react";
 import {
   collection,
@@ -68,22 +68,26 @@ export default function Home() {
   return (
     <main>
       <div>
-        名前:
-        <br />
-        <input
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <br />
-        内容:
-        <br />
-        <textarea
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        ></textarea>
-        <br />
-        <button onClick={post}>投稿</button>
+        <p>
+          名前:
+          <br />
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </p>
+        <p>
+          内容:
+          <br />
+          <textarea
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          ></textarea>
+        </p>
+        <p>
+          <button onClick={post}>投稿</button>
+        </p>
       </div>
       <hr />
       <div>{data}</div>

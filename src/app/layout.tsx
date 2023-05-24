@@ -1,4 +1,4 @@
-// import "./globals.css";
+import "./css/common.css";
 
 export const metadata = {
   title: "Next.js Board",

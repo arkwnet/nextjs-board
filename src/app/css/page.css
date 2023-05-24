@@ -1,0 +1,16 @@
+main {
+  padding: 20px;
+}
+
+main p {
+  margin-bottom: 10px;
+}
+
+main input,
+main textarea {
+  width: 300px;
+}
+
+main button {
+  padding: 5px 10px;
+}
